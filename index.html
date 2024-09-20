@@ -1,0 +1,74 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Seven Segment Timer</title>
+
+  <!-- Bootstrap CSS -->
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="D:\stopwatch\style.css">
+
+</head>
+
+<body>
+  <div class="container text-center">
+    <div id="segContainer" class="segmentContainer" style="height: 100px; width: 500px; padding: 0.25em;">
+    </div>
+  </div>
+  <div class="container text-center">
+    <button id="start" class="btn-success">Start</button>
+    <button id="stop" class="btn-danger">Stop</button>
+    <button id="reset" class="btn-primary">Reset</button>
+  </div>
+  <br />
+  <div class="text-center">
+    <div class="panel-title"><input type="checkbox" id="extraOptionsCB"><label for="extraOptionsCB">Show Extra Options</label></div>
+  </div>
+  <div class="container" id="extraOptionsSection" style="display:none;">
+    <div class="row text-center">
+      <div class="panel-title"><strong>Extra Options</strong></div>
+    </div>
+    <div class="form-group col-xs-6 col-md-3">
+      <label for="displayType">Display Type:</label>
+      <select id="displayType" name="displayType" class="form-control">
+        <option value="seven-seg" selected>Seven Segment (Default)</option>
+        <option value="14-segment">14 Segment</option>
+        <option value="16-segment">16 Segment</option>
+      </select>
+    </div>
+    <div class="form-group col-xs-6 col-md-3">
+      <label for="displayTheme">Theme:</label>
+      <select id="displayTheme" name="displayTheme" class="form-control">
+        <option value="Red" selected>Red (Default)</option>
+        <option value="Lime">Green</option>
+        <option value="Yellow">Yellow</option>
+        <option value="Blue">Blue</option>
+      </select>
+    </div>
+    <div class="form-group col-xs-6 col-md-3">
+      <label for="countMode">Mode:</label>
+      <select id="countMode" name="countMode" class="form-control">
+        <option value="time" selected>Current Time</option>
+        <option value="countDown">Count Down</option>
+        <option value="countUp">Count Up</option>
+      </select>
+    </div>
+    <div id="timeSetSection" class="form-group col-xs-6 col-md-3">
+      <label for="hour">Set Time:</label>
+      <div>
+        <input class="form-control" type="text" id="hour" style="width:50px; display:inline-block" />
+        <input class="form-control" type="text" id="min" style="width:50px; display:inline-block" />
+        <input class="form-control" type="text" id="sec" style="width:50px; display:inline-block" />
+      </div>
+    </div>
+  </div>
+
+  <!-- jQuery Version 1.11.1 -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"></script>
+  <script src="D:\stopwatch\script.js"></script>
+</body>

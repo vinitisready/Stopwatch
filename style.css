@@ -1,0 +1,25 @@
+body {
+  padding-top: 70px;
+}
+.segmentContainer {
+  display: inline-block;
+  background-color: Black;
+  border-radius: 5px;
+  margin-left: 18px;
+  margin-right: 18px;
+}
+.segDisplayDigitGroup {
+  overflow: hidden;
+  stroke-width: 0;
+  height: 100%;
+  width: 100%;
+  background-color: Black;
+}
+.seg-svg {
+  fill: #320000;
+  overflow: hidden;
+  stroke-width: 0;
+  height: 100%;
+  width: 100%;
+  background-color: Black;
+}
